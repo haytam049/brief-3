@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demande system</title>
+
+    <link rel="stylesheet" href="css/responsivity.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h2 class="logo-icon">H</h2>
+            <h1 class="logo-name">Help Desk</h1>
+        </div>
+        <nav class="menu">
+            <img src="assets/icons/hamburger-menu-svgrepo-com.svg" alt="" class="menu-icon">
+        </nav>
+    </header>
+    <main>
+        <section class="Gestion">
+            <h2 class="title">Gestion des demandes</h2>
+            <h6 class="description">Suivez et gérez les incidents informatiques.</h6>
+            <div class="creation">
+                <h2 class="creation-title">Créer une demande</h2>
+                <h6 class="description">Décrivez votre problème informatique.</h6>
+                <div class="form">
+                    <form action="" class="spacing">
+                        <div class="prob">
+                            <label for="problem" class="labels">Titre du problème *</label><br class="breaks"><br
+                                class="breaks">
+                            <input type="text" id="problem" name="problem" class="select fract" required><br
+                                class="breaks"><br class="breaks">
+                        </div>
+                        <div>
+                            <label for="category" class="labels">Catégorie *</label><br class="breaks"><br
+                                class="breaks">
+                            <select name="category" id="category" class="select">
+                                <option value="material">Matériel</option>
+                                <option value="Logiciel">Logiciel</option>
+                                <option value="Réseau">Réseau</option>
+                            </select><br class="breaks"><br class="breaks">
+                        </div>
+                        <div>
+                            <label for="priority" class="labels">Priorité *</label><br class="breaks"><br
+                                class="breaks">
+                            <select name="priority" id="priority" class="select">
+                                <option value="low">Basse</option>
+                                <option value="normal">Normale</option>
+                                <option value="high">Haute</option>
+                            </select><br class="breaks"><br class="breaks">
+                        </div>
+                        <div class="descrip">
+                            <label for="Description" class="labels">Description *</label><br class="breaks"><br
+                                class="breaks">
+                            <input type="text" id="description" name="Description" class="select" required><br
+                                class="breaks"><br class="breaks">
+                            
+                        </div>
+                        <div class="space">
+                            <br>
+                        </div>
+                        <div class="buttondiv">
+                            <input type="submit" id="btn" value="＋  Ajouter la demande" class="button"><br
+                                class="breaks"><br class="breaks">
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="cartes">
+            <div class="title1">
+                <h2>Liste des demandes</h2>
+                <h6 id="counter">0 demandes</h6>
+            </div>
+            <div id="demandes">
+                <!-- <div class="carte">
+                    <div class="upper">
+                        <img src="assets/icons/install-svgrepo-com.svg" alt="" class="icon">
+                        <p class="serial">HD-001</p>
+                    </div>
+                    <div class="body">
+                        <h4 class="titre">Connexion Wi-Fi instable</h4>
+                        <p class="desc">Le réseau se déconnecte régulièrement.</p>
+                        <div class="status">
+                            <p class="type">Réseau</p>
+                            <p class="priority">Haute</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="modify">
+                            ✎ Modifier
+                        </button>
+                        <button class="delete">
+                            ♜ Supprimer
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+</body>
+<script src="javascript/script.js"></script>
+
+</html>
